@@ -6,25 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'User';
-  serverStatus = false;
-
-  constructor() {
-    setTimeout(() => {
-      this.serverStatus = true;
-    }, 6000);
-
-  }
-
-  getStatus() {
-    return this.serverStatus ? 'Online' : 'Offline';
-  }
-
-
-
-  sendAlert() {
-    alert('SErver Up');
-  }
+  
 
 
 
