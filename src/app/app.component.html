@@ -1,8 +1,24 @@
-<input type="text" name="" id="" [(ngModel)]="title">
-hi, {{title}}
+<div class="container">
+
+    <!-- property binding -->
+    <input type="text" name="" id="" [(ngModel)]="title" placeholder="Enter your name">
+
+    <!-- string interpolation -->
+    <p>
+        Hi, {{title}}
+    </p>
+    <p>
+        Logged in as {{title.toLowerCase()=='admin'?'Admin':'Guest'}}
+
+    </p>
+
+    You are {{getStatus()}}
 
 
-<button type="button" class="btn btn-primary" (click)="sendAlert()">Primary</button>
 
 
-<app-servercc></app-servercc>
+    <button type="button" class="btn btn-primary" (click)="sendAlert()" [disabled]="!serverStatus">Run Server</button>
+
+
+    <app-servercc></app-servercc>
+</div>

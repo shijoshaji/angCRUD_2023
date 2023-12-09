@@ -1,1 +1,23 @@
 install bootstrap to angular: https://www.techiediaries.com/angular-bootstrap/
+
+
+// NOTES:
+/**!SECTION
+ * Created a serverCC folder
+ * Created 2 files ts & html
+ * added the code required
+ * added the selector in app.component html
+ * declated the component in the app.module ts
+ * 
+ * all these are created manually to understand the flow.
+ * 
+ * Angualr has CLI command which does all this
+ * `ng g c component-name`
+ * `ng g c component-name --dry-run` => 
+ * Use the --dry-run option if you need to test the output of the ng generate command when creating a component.
+ * `ng serve --port 3456` => to open in port from default 4200
+ * 
+ * 
+ * 
+ * https://bobbyhadz.com/blog/angular-change-port
+ */
